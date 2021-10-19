@@ -1,0 +1,21 @@
+.appoinment-form input{
+    display: block;
+    /* margin-top: 30px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    */
+    width: 100%; 
+}
+
+.appoinment-form{
+    /* margin:30px 150px; */
+
+}
+.error{
+    color: red;
+}
+.appoinment-submit{
+    background-color:orange;
+    border-radius: 10px;
+}
