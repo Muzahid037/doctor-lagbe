@@ -8,13 +8,19 @@ const NotFound = () => {
                 <div className="col">
                     <img className="img-fluid" src={img404} alt="" />
                 </div>
-                <div className="col d-flex justify-content-around align-items-center">
-                    <p>The HTTP 404, 404 not found, 404, 404 error, page not found or file not found error message is a hypertext transfer protocol standard response code, in computer network communications, to indicate that the browser was able to communicate with a given server, but the server could not find what was requested.</p>
 
-                    <Link to="/">
-                    <button className="btn-success">Go Homepage</button>
+               
+                    <div className="col d-flex justify-content-around align-items-center">
+                        <div>
+                        <p>The HTTP 404, 404 not found, 404, 404 error, page not found or file not found error message is a hypertext transfer protocol standard response code, in computer network communications, to indicate that the browser was able to communicate with a given server, but the server could not find what was requested.</p>
+                        <Link to="/">
+                        <button className="btn-success">Go Homepage</button>
                     </Link>
-                </div>
+                    </div>
+                    </div>
+
+                
+
             </div>
         </div>
     );
