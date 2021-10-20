@@ -58,6 +58,7 @@ const useFirebase = () => {
         updateProfile(auth.currentUser, { displayName: name })
             .then(() => {
                 setError('');
+                window.location.reload();
             }).catch((error) => {
                 setError(error.message);
             });
@@ -67,7 +68,7 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 const user = result.user;
-                console.log(user);
+                //console.log(user);
                 setError("");
             })
             .catch((error) => {
@@ -82,7 +83,7 @@ const useFirebase = () => {
             // Sign-out successful.
             setUser({});
             setError('');
-            console.log("logOut");
+            //console.log("logOut");
         }).catch((error) => {
             setError(error.message);
         })
@@ -93,7 +94,7 @@ const useFirebase = () => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
-                console.log("onAuthStateChanged", user);
+                //console.log("onAuthStateChanged", user);
                 const uid = user.uid;
             } else {
                 setUser({});
@@ -101,7 +102,7 @@ const useFirebase = () => {
             setIsLoading(false)
         });
         return unsubscribe;
-    }, [user])
+    }, [])
 
     return {
         user,

@@ -9,7 +9,7 @@ import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
     const copy = <FontAwesomeIcon icon={faCopyright} />
-
+console.log("footer")
     return (
         <div className="bg-dark text-white py-5">
             {/* <h2>Footer</h2> */}

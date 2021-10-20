@@ -16,6 +16,20 @@ function App() {
   return (
     <div className="App">
 
+
+      {/* <AuthProvider>
+        <Router>
+
+          <Header></Header>
+
+          <Home></Home>
+
+          <Footer></Footer>
+
+        </Router>
+      </AuthProvider> */}
+
+
       <AuthProvider>
 
         <Router>

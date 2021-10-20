@@ -3,9 +3,10 @@ import { useForm } from "react-hook-form";
 import './Appointment.css';
 import AppointmentImg from './../../images/appoinment.jpg'
 import useAuth from '../../hooks/useAuth';
+import useFirebase from '../../hooks/useFirebase';
 
 const Appointment = () => {
-    const { user } = useAuth();
+     const { user } = useAuth();
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);

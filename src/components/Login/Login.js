@@ -33,7 +33,7 @@ const Login = () => {
     //console.log(watch("example")); // watch input value by passing the name of it
     return (
         <div id="login">
-            <h2>login</h2>
+            {/* <h2>login</h2> */}
 
             <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
                 <div className="col">
